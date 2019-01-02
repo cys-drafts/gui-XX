@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjectList</class>
+ <widget class="QDialog" name="ProjectList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Projects</string>
+  </property>
+  <widget class="QListView" name="pListView">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>391</width>
+     <height>451</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>40</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>80</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>160</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ProjectList</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>263</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
